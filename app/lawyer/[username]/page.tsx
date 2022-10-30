@@ -231,7 +231,7 @@ export default function ProfessionalProfilePage(props: any) {
         <div className="flex h-56  pb-6">
           <div className="w-4/12 border-r border-solid border-slate-300 py-2 px-2.5 pb-3 flex pt-2">
             <img
-              className="shadow-xl"
+              className="shadow-xl w-32 h-40"
               src="https://remap.ch/wp-content/uploads/2020/12/PhilippHeer-1390x1536.jpg"
               alt=""
             />
@@ -252,7 +252,7 @@ export default function ProfessionalProfilePage(props: any) {
           </div>
           <div className="w-4/12 border-r border-solid border-slate-300 py-2 px-2.5 pb-3 flex pt-2">
             <img
-              className="shadow-xl"
+              className="shadow-xl h-40 w-32"
               src="https://th.bing.com/th/id/OIP.ebkVb31_WRgupRDZ_xS-CwHaLH?pid=ImgDet&rs=1"
               alt=""
             />
@@ -271,7 +271,7 @@ export default function ProfessionalProfilePage(props: any) {
           </div>
           <div className="w-4/12  py-2 px-2.5 pb-3 flex">
             <img
-              className="shadow-xl"
+              className="shadow-xl h-40 w-32"
               src="https://th.bing.com/th/id/R.45c3d9ddfeb1bd34c75138ba6ac4c562?rik=G5kw6dK5U7spEw&pid=ImgRaw&r=0"
               alt=""
             />

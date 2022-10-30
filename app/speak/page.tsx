@@ -1,13 +1,17 @@
 import Link from "next/link";
-export default function Question(props: any) {
+export default function TalkToLawyer(props: any) {
   console.log(props);
   return (
     <div className=" w-full h-auto">
       <div className=" p-10 w-7/12 block mx-auto ">
-        <p className="font-bold text-2xl pb-3">Ask Multiple Lawyers</p>
-        <p className="pb-2">
-          Get legal advice from multiple lawyers in 1 hour!
+        <p className="font-bold text-2xl pb-3">
+          Talk to a Lawyer for 15 minutes
         </p>
+        <textarea
+          name="Question"
+          placeholder="Briefly describe your legal issue."
+          className="w-full h-56 border-slate-300 border border-solid text-black pl-2 pt-1 mb-3"
+        ></textarea>
         <select
           name="Area"
           className="w-full border-slate-300 border-solid border rounded pl-2 py-1 text-slate-500 mb-3"
@@ -25,21 +29,23 @@ export default function Question(props: any) {
           <option value="Family Law">Taxation</option>
         </select>
         <input
-          type="text "
-          className="w-full border-slate-300 border-solid border py-1 pl-2 mb-3"
-          placeholder="Question title"
+          type="text"
+          className="border-slate-300 border-solid border w-5/12 rounded py-1 pl-2 mb-3"
+          placeholder="My Name"
         />
-        <textarea
-          name="Question"
-          placeholder="Type your question here."
-          className="w-full h-56 border-slate-300 border border-solid text-slate-700 pl-2 pt-1 mb-4"
-        ></textarea>
+        <br></br>
         <input
           type="text"
           className="border-slate-300 border-solid border w-5/12 rounded py-1 pl-2 mb-3"
-          placeholder="My phone number. Optional."
+          placeholder="My Email"
         />
-        <div className="flex mb-4">
+        <br></br>
+        <input
+          type="text"
+          className="border-slate-300 border-solid border w-5/12 rounded py-1 pl-2 mb-3"
+          placeholder="My phone number"
+        />
+        <div className="flex mb-5">
           <input type="checkbox" />
           <p className="pl-1">
             I agree to the{" "}
@@ -51,6 +57,10 @@ export default function Question(props: any) {
               Privacy policy
             </a>
           </p>
+        </div>
+        <div className="flex mb-4">
+          <p className="text-2xl">Total price:</p>
+          <p className="text-lime-600 text-2xl">US $20</p>
         </div>
         <Link href="" className="bg-red-600 text-white px-4 py-2 rounded">
           Continue
