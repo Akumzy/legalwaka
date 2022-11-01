@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { EmptyStar, FullStar, HalfStar } from "./other/stars";
-import { City, Court } from "./other/options";
+import { EmptyStar, FullStar, HalfStar } from "./(group)/other/stars";
+import { City, Court } from "./(group)/other/options";
 
 type IProfessional = {
   id: number;
@@ -216,7 +216,7 @@ export default async function Home() {
                   </Link>
                   <Link
                     className="bg-red-600 px-3 h-10 text-white text-center py-2 rounded"
-                    href=""
+                    href="/speak"
                   >
                     Book a Consultation
                   </Link>
